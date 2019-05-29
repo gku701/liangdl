@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gku701/liangdl
+          username: gku701
+          searchPaths: config-server
+          password: l8735911
+  application:
+    name: config-server
